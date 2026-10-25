@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-const baseUrl = import.meta.env.BASE_URL;
+
 import {
   ArrowRight,
   Eye,
@@ -16,7 +16,7 @@ import {
   Sprout,
   UserRound,
 } from "lucide-react";
-
+const baseUrl = import.meta.env.BASE_URL;
 const impactStats = [
   {
     value: "500+",
