@@ -287,7 +287,7 @@ export default function Contact() {
                       required
                       type="tel"
                       autoComplete="tel"
-                      placeholder="e.g. +256 700 123 456"
+                      placeholder="e.g. +256 773 102 927"
                       className={fieldClass}
                     />
                   </FormField>
@@ -378,9 +378,9 @@ export default function Contact() {
                 <ContactDetail
                   icon={<Phone size={19} />}
                   title="Phone / WhatsApp"
-                  value="+256 700 123 456"
+                  value="+256 773 102 927"
                   note="Chat with us on WhatsApp"
-                  href="tel:+256700123456"
+                  href="tel:+256773102927"
                 />
                 <ContactDetail
                   icon={<Mail size={19} />}
@@ -442,13 +442,13 @@ export default function Contact() {
               </span>
             </a>
             <a
-              href="tel:+256700123456"
+              href="tel:+256773102927"
               className="flex min-h-[60px] items-center gap-3 rounded-xl bg-[#E9B949] px-4 py-3 text-[#063D2B] transition hover:bg-[#D7A72E]"
             >
               <Phone size={23} />
               <span>
                 <span className="block text-[11px] font-extrabold">Call Us</span>
-                <span className="mt-0.5 block text-[9px]">+256 700 123 456</span>
+                <span className="mt-0.5 block text-[9px]">+256 773 102 927</span>
               </span>
             </a>
             <a
