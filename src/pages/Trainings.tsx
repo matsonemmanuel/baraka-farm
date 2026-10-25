@@ -21,34 +21,35 @@ import {
   Bird,
   
 } from "lucide-react";
+const baseUrl = import.meta.env.BASE_URL;
 
 const programmes = [
   {
     title: "Poultry Housing & Brooding",
     description:
       "Learn how to set up proper housing and manage chicks for healthy growth.",
-    image: "/training-brooding.jpg",
+    image: `${baseUrl}training-brooding.jpg`,
     icon: Bird,
   },
   {
     title: "Feeding & Nutrition",
     description:
       "Understand feed types, formulation and feeding strategies for better growth and productivity.",
-    image: "/training-feeding.jpg",
+    image: `${baseUrl}training-feeding.jpg`,
     icon: Leaf,
   },
   {
     title: "Disease Prevention & Management",
     description:
       "Identify common diseases, practise biosecurity and keep your flock healthy.",
-    image: "/training-disease.jpg",
+    image: `${baseUrl}training-disease.jpg`,
     icon: ShieldCheck,
   },
   {
     title: "Farm Records & Business Skills",
     description:
       "Learn simple record keeping, cost management and how to grow your poultry business.",
-    image: "/training-records.jpg",
+    image: `${baseUrl}training-records.jpg`,
     icon: ClipboardList,
   },
 ];

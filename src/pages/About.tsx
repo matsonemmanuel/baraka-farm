@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.BASE_URL;
 import {
   ArrowRight,
   Eye,
@@ -101,7 +102,7 @@ export default function About() {
       {/* 1. ABOUT HERO */}
       <section className="relative isolate flex min-h-[245px] items-center overflow-hidden sm:min-h-[285px] lg:min-h-[320px]">
         <img
-          src="/About-hero.jpg"
+          src={`${baseUrl}About-hero.jpg`}
           alt="Poultry farmer caring for a chicken on the farm"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-[center_38%]"
         />
@@ -173,7 +174,7 @@ export default function About() {
 
           <div className="relative pb-8 pr-1 sm:pb-9 sm:pr-3">
             <img
-              src="/about1.jpg"
+              src={`${baseUrl}about1.jpg`}
               alt="Healthy poultry in a well-managed farm"
               loading="lazy"
               className="h-[250px] w-full rounded-xl object-cover sm:h-[310px] lg:h-[300px]"
@@ -377,7 +378,7 @@ export default function About() {
 
           <div className="relative pb-8 pr-1 sm:pb-9 sm:pr-3">
             <img
-              src="/founder.jpg"
+              src={`${baseUrl}founder.jpg`}
               alt="Baraka Farm founder holding a chicken"
               loading="lazy"
               className="h-[250px] w-full rounded-xl object-cover object-center sm:h-[310px] lg:h-[290px]"
