@@ -566,7 +566,7 @@ export default function Training() {
       {/* 8. FINAL CTA */}
       <section className="relative isolate flex min-h-[155px] items-center overflow-hidden sm:min-h-[180px]">
         <img
-          src="/bird2.jpg"
+          src={`${baseUrl}bird2.jpg`}
           alt="Poultry flock on a farm"
           loading="lazy"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
