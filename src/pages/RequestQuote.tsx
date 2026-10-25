@@ -23,8 +23,6 @@ import {
   X,
 } from "lucide-react";
 
-const WHATSAPP_NUMBER = "256700123456";
-
 const productOptions = [
   {
     label: "Poultry Feeds",
@@ -219,7 +217,7 @@ export default function RequestQuote() {
       "Please review my requirements and share available products, current prices, quantities and delivery information.",
     ].join("\n");
 
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${256773102927}?text=${encodeURIComponent(message)}`;
 
     // Opens WhatsApp with the request prepared for the customer to review and send.
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
