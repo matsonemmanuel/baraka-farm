@@ -33,6 +33,7 @@ type Product = {
   badge?: string;
 };
 
+const baseUrl = import.meta.env.BASE_URL;
 const categories = [
   { name: "Poultry Feeds", image: "/product-feeds.jpg", icon: Bird },
   { name: "Feeders", image: "/product-feeder.jpg", icon: House },
@@ -203,7 +204,7 @@ export default function Products() {
       {/* 1. HERO BANNER */}
       <section className="relative isolate min-h-[285px] overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
         <img
-          src="/bird2.jpg"
+          src={`${baseUrl}bird2.jpg`}
           alt="Poultry farmer holding a bag of poultry feed"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />

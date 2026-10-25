@@ -16,7 +16,7 @@ interface Article {
   readTime: string;
   views: string;
 }
-
+const baseUrl = import.meta.env.BASE_URL;
 const articles: Article[] = [
   { id: 1, title: "Practical Tips for a Healthier Poultry Flock", description: "Simple, proven practices that improve flock health, productivity and farm profitability.", category: "Poultry Farming", image: "/images/poultry-health.jpg", date: "June 18, 2026", readTime: "6 min read", views: "1.2k" },
   { id: 2, title: "How to Build a Profitable Poultry Business", description: "Learn the fundamentals of planning, management and market access for your poultry enterprise.", category: "Business Tips", image: "/images/poultry-business.jpg", date: "June 12, 2026", readTime: "8 min read", views: "980" },
@@ -89,7 +89,7 @@ export default function Insights() {
     <main className="overflow-hidden bg-[#F7F5EC] text-[#202923]">
       {/* HERO */}
       <section className="relative isolate min-h-[290px] overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
-        <img src="/happy.jpg" alt="Healthy brown hen in a poultry farm" className="absolute inset-0 z-0 h-full w-full object-cover object-center" />
+        <img src={`${baseUrl}happy.jpg`} alt="Healthy brown hen in a poultry farm" className="absolute inset-0 z-0 h-full w-full object-cover object-center" />
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/90 via-black/60 to-black/15" />
         <div className="relative z-20 mx-auto grid min-h-[290px] max-w-[1440px] gap-8 px-5 py-7 sm:min-h-[330px] sm:px-8 lg:min-h-[350px] lg:grid-cols-[1fr_235px] lg:items-center lg:px-12">
           <div className="max-w-[650px]">

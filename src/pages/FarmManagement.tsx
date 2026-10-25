@@ -21,7 +21,7 @@ import {
   Syringe,
   
 } from "lucide-react";
-
+const baseUrl = import.meta.env.BASE_URL;
 const categories = [
   {
     title: "Housing & Environment",
@@ -325,7 +325,7 @@ export default function FarmManagement() {
       <section className="bg-[#063D2B] px-5 py-6 text-white sm:px-8 sm:py-7 lg:px-12">
         <div className="mx-auto grid max-w-[1440px] gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <img
-            src="/bird1.jpg"
+            src={`${baseUrl}bird1.jpg`}
             alt="Farmer checking poultry in a well-managed chicken house"
             loading="lazy"
             className="h-[210px] w-full rounded-xl object-cover sm:h-[260px] lg:h-[250px]"

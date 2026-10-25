@@ -46,7 +46,7 @@ function icon(children: React.ReactNode, viewBox = "0 0 24 24") {
     );
   };
 }
-
+const baseUrl = import.meta.env.BASE_URL;
 const ArrowRight = icon(<><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></>);
 const GraduationCap = icon(<><path d="m3 8 9-4 9 4-9 4-9-4Z" /><path d="M7 10v4c2 2 8 2 10 0v-4" /><path d="M21 8v6" /></>);
 const ShoppingCart = icon(<><circle cx="9" cy="20" r="1" /><circle cx="19" cy="20" r="1" /><path d="M3 4h2l2.7 11.3a2 2 0 0 0 2 1.7h7.7a2 2 0 0 0 2-1.7L21 7H6" /></>);
@@ -153,7 +153,7 @@ export default function Contact() {
       {/* 1. HERO */}
       <section className="relative isolate min-h-[300px] overflow-hidden sm:min-h-[340px] lg:min-h-[350px]">
         <img
-          src="/learners.jpg"
+          src={`${baseUrl}learners.jpg`}
           alt="Poultry farmer holding a healthy chicken in a poultry house"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
