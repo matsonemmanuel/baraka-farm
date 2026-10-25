@@ -79,9 +79,9 @@ export default function Navbar() {
           onClick={closeNavigation}
         >
           <img
-            src="/ben-logo.png"
+            src={`${import.meta.env.BASE_URL}ben-logo.png`}
             alt="Baraka Farm"
-            className="h-[44px] w-auto object-contain"
+            className="h-12 w-auto object-contain"
           />
         </Link>
 

@@ -41,7 +41,7 @@ export default function Footer() {
               className="inline-flex rounded-xl focus:outline-none focus:ring-2 focus:ring-[#E9B949]"
             >
               <img
-                src="/ben1-logo.png"
+                src={`${import.meta.env.BASE_URL}ben1-logo.png`}
                 alt="Baraka Farm"
                 width={160}
                 height={80}
