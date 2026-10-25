@@ -167,7 +167,7 @@ export default function Training() {
       {/* 1. HERO */}
       <section className="relative isolate flex min-h-[300px] items-center sm:min-h-[340px] lg:min-h-[370px]">
         <img
-          src="/group.jpg"
+          src={`${baseUrl}group.jpg`}
           alt="Practical poultry training with a farmer"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
