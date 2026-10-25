@@ -433,7 +433,7 @@ export default function FarmManagement() {
         <div className="mx-auto grid max-w-[1440px] gap-5 lg:grid-cols-[1.05fr_1fr]">
           <div className="relative isolate flex min-h-[260px] items-end overflow-hidden rounded-xl bg-[#202923] p-5 text-white sm:p-7">
             <img
-              src="/bird2.jpg"
+              src={`${baseUrl}bird2.jpg`}
               alt="Healthy poultry on a farm"
               loading="lazy"
               className="absolute inset-0 -z-20 h-full w-full object-cover"
