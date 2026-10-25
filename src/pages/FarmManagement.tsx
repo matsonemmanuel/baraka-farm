@@ -169,7 +169,7 @@ export default function FarmManagement() {
       {/* 1. HERO */}
       <section className="relative isolate min-h-[290px] overflow-hidden sm:min-h-[330px] lg:min-h-[340px]">
         <img
-          src="/feeding3.jpg"
+          src={`${baseUrl}feeding3.jpg`}
           alt="Poultry farmer inspecting healthy chickens in a poultry house"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
