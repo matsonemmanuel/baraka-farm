@@ -8,11 +8,17 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(null);
-  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
+  const [openDesktopDropdown, setOpenDesktopDropdown] =
+    useState<string | null>(null);
+  const [openMobileDropdown, setOpenMobileDropdown] =
+    useState<string | null>(null);
 
   const navigate = useNavigate();
   const headerRef = useRef<HTMLElement>(null);
+
+  // Use the correct asset base path for GitHub Pages.
+  const baseUrl = import.meta.env.BASE_URL;
+  const logoUrl = `${baseUrl}ben-logo.png`;
 
   // Close menus when clicking outside or pressing Escape.
   useEffect(() => {
@@ -70,7 +76,6 @@ export default function Navbar() {
       className="sticky top-8 z-50 border-b border-[#063D2B]/10 bg-white"
     >
       <div className="mx-auto flex h-[66px] max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-10">
-
         {/* Logo */}
         <Link
           to="/"
@@ -79,9 +84,16 @@ export default function Navbar() {
           onClick={closeNavigation}
         >
           <img
-            src={`${import.meta.env.BASE_URL}ben-logo.png`}
+            src={logoUrl}
             alt="Baraka Farm"
+            width={160}
+            height={48}
             className="h-12 w-auto object-contain"
+            onError={() => {
+              console.error(
+                `Baraka Farm navbar logo could not be loaded: ${logoUrl}. Check the filename in your public folder.`
+              );
+            }}
           />
         </Link>
 
@@ -168,7 +180,7 @@ export default function Navbar() {
                   )}
                 </div>
 
-                {/* Desktop dropdown panel */}
+                {/* Desktop dropdown */}
                 {hasChildren && (
                   <div
                     className={`absolute left-0 top-full z-50 min-w-[244px] origin-top rounded-b-lg border border-[#063D2B]/10 bg-white py-2 shadow-xl transition-all duration-200 ${
