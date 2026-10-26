@@ -385,7 +385,7 @@ export default function Contact() {
                 <ContactDetail
                   icon={<Mail size={19} />}
                   title="Email Address"
-                  value="info@barakafarm.com"
+                  value="baraka777@gmail.com"
                   note="We respond within 24 hours"
                   href="mailto:info@barakafarm.com"
                 />
