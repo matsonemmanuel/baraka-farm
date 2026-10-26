@@ -54,7 +54,7 @@ const categories = [
     icon: House,
   },
   { name: "Farm Tools", image: `${baseUrl}spade.png`,icon: Wrench },
-  { name: "Other Supplies", image: `${baseUrl}drinking.png`, icon: Egg },
+  { name: "Other Supplies", image: `${baseUrl}drinkers.png`, icon: Egg },
 ];
 
 const products: Product[] = [
