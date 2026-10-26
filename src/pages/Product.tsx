@@ -35,26 +35,26 @@ type Product = {
 
 const baseUrl = import.meta.env.BASE_URL;
 const categories = [
-  { name: "Poultry Feeds", image: "/product-feeds.jpg", icon: Bird },
-  { name: "Feeders", image: "/product-feeder.jpg", icon: House },
-  { name: "Drinkers", image: "/product-drinker.jpg", icon: Droplets },
+  { name: "Poultry Feeds", image: `${baseUrl}feed booster.png`, icon: Bird },
+  { name: "Feeders", image: `${baseUrl}feeder1.png`, icon: House },
+  { name: "Drinkers", image: `${baseUrl}drinker2.png`, icon: Droplets },
   {
     name: "Heating & Brooding",
-    image: "/product-brooder.jpg",
+    image: `${baseUrl}feeding6.png`,
     icon: Flame,
   },
   {
     name: "Vaccines & Medicines",
-    image: "/product-vaccines.jpg",
+    image: `${baseUrl}vaccine.png`,
     icon: Syringe,
   },
   {
     name: "Housing Equipment",
-    image: "/product-housing.jpg",
+    image: `${baseUrl}wire.png`,
     icon: House,
   },
-  { name: "Farm Tools", image: "/product-tools.jpg", icon: Wrench },
-  { name: "Other Supplies", image: "/product-eggs.jpg", icon: Egg },
+  { name: "Farm Tools", image: `${baseUrl}spade.png`,icon: Wrench },
+  { name: "Other Supplies", image: `${baseUrl}drinking.png`, icon: Egg },
 ];
 
 const products: Product[] = [
@@ -64,7 +64,7 @@ const products: Product[] = [
     price: 120000,
     description: "High-quality starter feed for faster and healthier growth.",
     category: "Poultry Feeds",
-    image: "/product-starter-feed.jpg",
+    image: `${baseUrl}feed booster.png`,
     badge: "Best Seller",
   },
   {
@@ -73,7 +73,7 @@ const products: Product[] = [
     price: 115000,
     description: "Balanced nutrition for stronger layers and better egg production.",
     category: "Poultry Feeds",
-    image: "/product-layer-feed.jpg",
+    image: `${baseUrl}sack.png`,
   },
   {
     name: "Chick Feeder",
@@ -81,7 +81,7 @@ const products: Product[] = [
     price: 18000,
     description: "Durable plastic feeder for chicks, easy to clean.",
     category: "Feeders",
-    image: "/product-feeder.jpg",
+    image: `${baseUrl}feeder1.png`,
   },
   {
     name: "Chick Drinker",
@@ -89,7 +89,7 @@ const products: Product[] = [
     price: 20000,
     description: "Clean and safe water for healthier chicks.",
     category: "Drinkers",
-    image: "/product-drinker.jpg",
+    image: `${baseUrl}drinker2.png`,
   },
   {
     name: "Brooding Lamp",
@@ -97,7 +97,7 @@ const products: Product[] = [
     price: 45000,
     description: "Provides the right warmth for healthy chick growth.",
     category: "Heating & Brooding",
-    image: "/product-brooder.jpg",
+    image: `${baseUrl}feeding6.png`,
   },
   {
     name: "Poultry Vaccines",
@@ -105,7 +105,7 @@ const products: Product[] = [
     price: 8000,
     description: "Essential vaccines for disease prevention.",
     category: "Vaccines & Medicines",
-    image: "/product-vaccines.jpg",
+    image: `${baseUrl}vaccine.png`,
   },
   {
     name: "Egg Trays",
@@ -113,7 +113,7 @@ const products: Product[] = [
     price: 4000,
     description: "Strong and reusable trays for safe egg handling.",
     category: "Other Supplies",
-    image: "/product-eggs.jpg",
+    image: `${baseUrl}layer.png`,
   },
   {
     name: "Knapsack Sprayer",
@@ -121,7 +121,7 @@ const products: Product[] = [
     price: 120000,
     description: "For farm hygiene and disinfection.",
     category: "Farm Tools",
-    image: "/product-tools.jpg",
+    image: `${baseUrl}birds.png`,
   },
 ];
 
@@ -204,7 +204,7 @@ export default function Products() {
       {/* 1. HERO BANNER */}
       <section className="relative isolate min-h-[285px] overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
         <img
-          src={`${baseUrl}bird2.jpg`}
+          src={`${baseUrl}bird4.png`}
           alt="Poultry farmer holding a bag of poultry feed"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
