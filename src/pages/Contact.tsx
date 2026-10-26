@@ -153,7 +153,7 @@ export default function Contact() {
       {/* 1. HERO */}
       <section className="relative isolate min-h-[300px] overflow-hidden sm:min-h-[340px] lg:min-h-[350px]">
         <img
-          src={`${baseUrl}learners.jpg`}
+          src={`${baseUrl}housing.png`}
           alt="Poultry farmer holding a healthy chicken in a poultry house"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />

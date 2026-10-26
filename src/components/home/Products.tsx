@@ -2,10 +2,10 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import feedsImage from "../../assets/images/service2.jpg";
-import feedersImage from "../../assets/images/product1.jpg";
-import drinkersImage from "../../assets/images/product2.jpg";
-import equipmentImage from "../../assets/images/product3.jpg";
+import feedsImage from "../../assets/images/feed2.png";
+import feedersImage from "../../assets/images/feeder.png";
+import drinkersImage from "../../assets/images/drinker1.png";
+import equipmentImage from "../../assets/images/spade1.png";
 
 const products = [
   {

@@ -1,9 +1,9 @@
 
 import { ArrowRight } from "lucide-react";
 
-import trainingImage from "../../assets/images/service1.jpg";
-import feedsImage from "../../assets/images/service2.jpg";
-import managementImage from "../../assets/images/service3.jpg";
+import trainingImage from "../../assets/images/learners2.png";
+import feedsImage from "../../assets/images/display1.png";
+import managementImage from "../../assets/images/farmer.png";
 
 const services = [
   {
