@@ -387,7 +387,7 @@ export default function Contact() {
                   title="Email Address"
                   value="baraka777@gmail.com"
                   note="We respond within 24 hours"
-                  href="mailto:info@barakafarm.com"
+                  href="mailto:baraka777@gmail.com"
                 />
                 <ContactDetail
                   icon={<MapPin size={19} />}
@@ -452,7 +452,7 @@ export default function Contact() {
               </span>
             </a>
             <a
-              href="mailto:info@barakafarm.com"
+              href="mailto:baraka777@gmail.com"
               className="flex min-h-[60px] items-center gap-3 rounded-xl bg-white px-4 py-3 text-[#063D2B] transition hover:bg-[#F0EEE6]"
             >
               <Mail size={23} />
