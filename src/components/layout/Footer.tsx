@@ -144,7 +144,7 @@ export default function Footer() {
                 className="group flex items-start gap-3 text-[12px] text-white/80 transition-colors hover:text-[#E9B949]"
               >
                 <Mail size={16} className="mt-0.5 shrink-0" />
-                <span className="break-all">info@barakafarm.com</span>
+                <span className="break-all">baraka777@gmail.com</span>
               </a>
 
               <a
