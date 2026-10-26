@@ -28,28 +28,28 @@ const programmes = [
     title: "Poultry Housing & Brooding",
     description:
       "Learn how to set up proper housing and manage chicks for healthy growth.",
-    image: `${baseUrl}training-brooding.jpg`,
+    image: `${baseUrl}housing1.png`,
     icon: Bird,
   },
   {
     title: "Feeding & Nutrition",
     description:
       "Understand feed types, formulation and feeding strategies for better growth and productivity.",
-    image: `${baseUrl}training-feeding.jpg`,
+    image: `${baseUrl}feeding5.png`,
     icon: Leaf,
   },
   {
     title: "Disease Prevention & Management",
     description:
       "Identify common diseases, practise biosecurity and keep your flock healthy.",
-    image: `${baseUrl}training-disease.jpg`,
+    image: `${baseUrl}bird5.png`,
     icon: ShieldCheck,
   },
   {
     title: "Farm Records & Business Skills",
     description:
       "Learn simple record keeping, cost management and how to grow your poultry business.",
-    image: `${baseUrl}training-records.jpg`,
+    image: `${baseUrl}record.png`,
     icon: ClipboardList,
   },
 ];
